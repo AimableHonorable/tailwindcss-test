@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <nav class="bg-dark text-white sm:flex justify-between px-3 h-auto sm:h-16 items-center py-2">
+    <div class="flex justify-between">
+      <h6>Navbar</h6>
+      
+    </div>
+    <div class="sm:block hidden">
+      <ul class="sm:flex">
+        <li class="sm:mx-2">login</li>
+        
+      </ul>
+    </div>
+    
+  </nav>
+  <div class="flex relative h-screen h-auto">
+    <button id="toggle-sidebar" class="absolute right-0">show</button>
+    <button id="toggle-sidebar" class="absolute right-0">hide</button>
+    <div class="sm:w-1/4 w-1/2  bg-dark h-full sm:relative absolute left-0 sidebar">
+      <div class="grid-cols-1 h-full grid-rows-6 text-white">
+        <div class="py-2 px-3 hover:bg-light cursor-pointer hover:text-dark border-b">
+          <a href="">Dashboard</a>
+        </div>
+        <div class="py-2 px-3 hover:bg-light cursor-pointer hover:text-dark border-b">
+          <a href="">Dashboard</a>
+        </div>
+        <div class="py-2 px-3 hover:bg-light cursor-pointer hover:text-dark border-b">
+          <a href="">Dashboard</a>
+        </div>
+        <div class="py-2 px-3 hover:bg-light cursor-pointer hover:text-dark border-b">
+          <a href="">Dashboard</a>
+        </div>
+        <div class="py-2 px-3 hover:bg-light cursor-pointer hover:text-dark border-b">
+          <a href="">Dashboard</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w-full">
+      <h1>main section</h1>
+    </div>
+  </div>
+</body>
+</html>

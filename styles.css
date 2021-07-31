@@ -1,0 +1,29 @@
+:root{
+  --main-color: #1f425f;
+  --text-color: #c0d7eb;
+}
+body{
+  background: var(--text-color);
+}
+.bg-dark{
+  background-color: var(--main-color);
+}
+.text-dark{
+  color: var(--main-color);
+}
+.hover\:text-dark:hover{
+  color: var(--main-color);
+}
+
+.hover\:bg-light:hover{
+  background-color: var(--text-color);
+}
+#toggle-sidebar:focus ~ .sidebar{
+  display: block;
+}
+
+@media screen and (max-width: 640px){
+  .sidebar{
+    display: none;
+  }
+}
